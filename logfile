@@ -1,3 +1,31 @@
 LOG:  database system was shut down at 2013-08-06 13:22:48 PDT
 LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
+FATAL:  database "Portfolio---Sinatra--RESTful-CRUD" does not exist
+FATAL:  database "Portfolio---Sinatra--RESTful-CRUD_develop" does not exist
+ERROR:  syntax error at or near "/" at character 1
+STATEMENT:  /d
+	SELECT * FROM notes
+	;
+ERROR:  invalid input syntax for integer: "id"
+STATEMENT:  SELECT  "notes".* FROM "notes"  WHERE "notes"."id" = $1 LIMIT 1
+FATAL:  database "dummy_users_development" does not exist
+FATAL:  database "dummy_users_development" does not exist
+FATAL:  database "dummy_users_development" does not exist
+FATAL:  database "dummy_users_development" does not exist
+ERROR:  column "deck" does not exist at character 8
+STATEMENT:  SELECT deck FROM "users" 
+ERROR:  database "Flashflood_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE "Flashflood_development";
+	
+ERROR:  syntax error at or near ":" at character 21
+STATEMENT:  select * from rounds:
+	select * from users;
+ERROR:  syntax error at or near ":" at character 21
+STATEMENT:  select * from rounds:
+	select * from users;
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down

@@ -7,3 +7,16 @@
 th {
   text-align: left;
 }
+
+.note {
+  margin: 20px auto;
+  padding: 14px;
+  box-shadow: 2px 2px 2px #888;
+  border: 1px dotted black;
+  border-radius: 4px;
+
+}
+
+.note h2 {
+  margin-top: 0px;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+ <form method='post' action="/notes/<%= @note.id %>">
+    Note: <input name="title" value="<%= @note.title %>"><br>
+    Content: <input name="content" value="<%= @note.content %>"><br>
+    <br>
+    <input type="hidden" name="_method" value="put" />
+    <button>Save Note</button>
+    <br>
+  </form>
+
+</div>
